@@ -62,32 +62,26 @@ class MainActivity : AppCompatActivity() {
             binding.radioFromDollar.id -> {
                 updateIcon(binding.imgFromCoin, Currency.DOLLAR)
                 checkEnabledCurrencies(dollar = false, euro = true, pound = true, currency = side)
-                binding.radioFromDollar.isChecked=false
             }
             binding.radioFromEuro.id -> {
                 updateIcon(binding.imgFromCoin, Currency.EURO)
                 checkEnabledCurrencies(dollar = true, euro = false, pound = true, currency = side)
-                binding.radioToEuro.isChecked=false
             }
             binding.radioFromPound.id -> {
                 updateIcon(binding.imgFromCoin, Currency.POUND)
                 checkEnabledCurrencies(dollar = true, euro = true, pound = false, currency = side)
-                binding.radioToPound.isChecked=false
             }
             binding.radioToDollar.id -> {
                 updateIcon(binding.imgFromCoin, Currency.DOLLAR)
                 checkEnabledCurrencies(dollar = false, euro = true, pound = true, currency = side)
-                binding.radioFromDollar.isChecked=false
             }
             binding.radioToEuro.id -> {
                 updateIcon(binding.imgFromCoin, Currency.EURO)
                 checkEnabledCurrencies(dollar = true, euro = false, pound = true, currency = side)
-                binding.radioFromEuro.isChecked=false
             }
             binding.radioToPound.id -> {
                 updateIcon(binding.imgFromCoin, Currency.POUND)
                 checkEnabledCurrencies(dollar = true, euro = true, pound = false, currency = side)
-                binding.radioFromPound.isChecked=false
             }
         }
     }
