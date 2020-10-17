@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Exchange</string>
+    <string name="amountTag">Amount</string>
+    <string name="pound">Pound</string>
+    <string name="euro">Euro</string>
+    <string name="dollar">Dollar</string>
+    <string name="fromCurrencyTag">From Currency</string>
+    <string name="exchange">EXCHANGE</string>
+    <string name="toCurrencyTag">To currency</string>
+    <string name="defaultValue">0</string>
+    <string name="result">%.2f %s = %.2f %s</string>
 </resources>

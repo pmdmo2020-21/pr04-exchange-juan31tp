@@ -5,4 +5,120 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
+    <TextView
+        android:id="@+id/lblAmount"
+        android:layout_margin="@dimen/margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amountTag"/>
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:textAlignment="textEnd"
+        android:text="@string/defaultValue"/>
+
+    <TextView
+        android:id="@+id/lblFromCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/fromCurrencyTag"/>
+
+    <RadioGroup
+        android:id="@+id/rgdFromCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioFromDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/dollar"/>
+
+        <RadioButton
+            android:id="@+id/radioFromEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/euro"/>
+
+        <RadioButton
+            android:id="@+id/radioFromPound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/pound"/>
+
+        <ImageView
+            android:id="@+id/imgFromCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/margin" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblToCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/toCurrencyTag"/>
+
+    <RadioGroup
+        android:id="@+id/rgdToCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioToDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/dollar"/>
+
+        <RadioButton
+            android:id="@+id/radioToEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/euro"/>
+
+        <RadioButton
+            android:id="@+id/radioToPound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/pound"/>
+
+        <ImageView
+            android:id="@+id/imgToCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/margin"
+            android:layout_gravity="end"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnExchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/exchange"/>
+
+
+
 </LinearLayout>
